@@ -142,38 +142,65 @@
                 <tbody class="table-group-divider">
                     <tr>
                         <th scope="row">1</th>
-                        <td>Mark</td>
-                        <td>Otto</td>
-                        <td>@mdo</td>
-                        <td>@mdo</td>
+                        <td>get</td>
+                        <td>toys-api.onrender.com/toys</td>
+                        <td>none</td>
+                        <td>get 10 toys </td>
                     </tr>
                     <tr>
                         <th scope="row">2</th>
-                        <td>Jacob</td>
-                        <td>Thornton</td>
-                        <td>@fat</td>
-                        <td>@fat</td>
+                        <td>get</td>
+                        <td>toys-api.onrender.com/toys/search?s={name}</td>
+                        <td>none</td>
+                        <td>Search toys by name or info get 10 toys</td>
                     </tr>
                     <tr>
                         <th scope="row">3</th>
-                        <td >Larry the Bird</td>
-                        <td>@twitter</td>
-                        <td>@twitter</td>
-                        <td>@twitter</td>
+                        <td >get</td>
+                        <td>toys-api.onrender.com/toys/category/{category name}</td>
+                        <td>none</td>
+                        <td>get 10 toys by category name</td>
                     </tr>
                     <tr>
                         <th scope="row">4</th>
-                        <td >Larry the Bird</td>
-                        <td>@twitter</td>
-                        <td>@twitter</td>
-                        <td>@twitter</td>
+                        <td >get</td>
+                        <td>toys-api.onrender.com/toys/prices?min=70&max=200</td>
+                        <td>none</td>
+                        <td>get 10 toys by price can use with min & max or onlu one of them </td>
+                    </tr>
+                    <tr>
+                        <td colspan="5" class="text-center text-bg-info text fw-bold " >must send token</td>
                     </tr>
                     <tr>
                         <th scope="row">5</th>
-                        <td >Larry the Bird</td>
-                        <td>@twitter</td>
-                        <td>@twitter</td>
-                        <td>@twitter</td>
+                        <td >post</td>
+                        <td>toys-api.onrender.com/toys</td>
+                        <td>{  "name":"bal11",
+                            <br> "info":"fff",
+                            <br> "category":"sport",
+                            <br> "img":"football.jpg" ,
+                            <br> "price":100  }
+                        </td>
+                        <td>Add toy only img is not required </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">6</th>
+                        <td >put</td>
+                        <td>toys-api.onrender.com/toys/{id of the toy}</td>
+                        <td>{  "name":"bal11",
+                            <br> "info":"fff",
+                            <br> "category":"sport",
+                            <br> "img":"football.jpg" ,
+                            <br> "price":100  }
+                        </td>
+                        <td>Edit toy only if you created the toy  </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">7</th>
+                        <td>delete</td>
+                        <td>toys-api.onrender.com/toys/{id of the toy}</td>
+                        <td> none</td>
+                        <td>Delete toy only if you created the toy </td>
                     </tr>
                 </tbody>
             </table>
