@@ -5,7 +5,8 @@ exports.toyCtrl={
     searchToy:async(req,res) => {
       let perPage = req.query.perPage || 10;
       let page = req.query.page || 1;
-    
+      let sort = req.query.sort || "_id"
+      let reverse = req.query.reverse == "yes" ? -1 : 1;
         try{
           let queryS = req.query.s;
           // מביא את החיפוש בתור ביטוי ולא צריך את כל הביטוי עצמו לחיפוש
@@ -15,7 +16,7 @@ exports.toyCtrl={
           let data = await ToyModel.find({$or:[{name:searchReg},{info:searchReg}]})
           .limit(perPage)
           .skip((page - 1) * perPage)
-          .sort({_id:-1})
+          .sort({[sort]:reverse})
           res.json(data);
         }
         catch(err){
@@ -26,12 +27,13 @@ exports.toyCtrl={
       getToy:async(req,res)=> {
         let perPage = req.query.perPage || 10;
         let page = req.query.page || 1;
-      
+        let sort = req.query.sort || "_id"
+        let reverse = req.query.reverse == "yes" ? -1 : 1;
         try{
           let data = await ToyModel.find({})
           .limit(perPage)
           .skip((page - 1) * perPage)
-          .sort({_id:-1})
+          .sort({[sort]:reverse})
           res.json(data);
         }
         catch(err){
@@ -80,14 +82,15 @@ exports.toyCtrl={
       toyByCategory:async(req,res) => {
         let perPage = req.query.perPage || 10;
         let page = req.query.page || 1;
-      
+        let sort = req.query.sort || "_id"
+        let reverse = req.query.reverse == "yes" ? -1 : 1;
           try{
             let catN = req.params.catName;
             let catReg = new RegExp(catN,"i")
             let data = await ToyModel.find({category:catReg})
             .limit(perPage)
             .skip((page - 1)*perPage)
-            .sort({_id:-1})
+            .sort({[sort]:reverse})
             res.json(data);
           }
           catch(err){

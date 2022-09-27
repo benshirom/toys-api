@@ -61,13 +61,7 @@
             vero
             praesentium tenetur omnis error harum cum asperiores vel dolorem, corporis eligendi molestiae. Alias
             voluptate
-            temporibus facere? Nam tempore laudantium asperiores enim sint, aut itaque, ab quidem commodi quaerat
-            praesentium. Inventore error accusantium esse doloremque sit dolorem quis fuga vero, eos voluptatum corrupti
-            commodi reiciendis soluta? Rerum eaque veniam aperiam nihil, explicabo quam. Accusantium maxime ad nisi eos
-            sit
-            facilis asperiores omnis debitis dicta libero neque pariatur soluta, quae adipisci atque ut ipsa eaque nihil
-            repudiandae iste earum itaque unde. At rem assumenda iure nisi ea sed ab, molestiae aut. Animi voluptates
-            tenetur cum, minus harum reiciendis dicta porro suscipit!
+           
 
         </div>
         <!-- Guide end  -->
@@ -76,47 +70,50 @@
             <div>
                 <h1 id="Users">Users Routes</h1>
             </div>
-            <table class="table">
-                <thead>
-                    <tr>
-                        <th scope="col">#</th>
-                        <th scope="col">Method</th>
-                        <th scope="col">URL</th>
-                        <th scope="col">Body</th>
-                        <th scope="col">Description</th>
-                    </tr>
-                </thead>
-                <tbody class="table-group-divider">
-                    <tr>
+            <div class="table-responsive">
+
+                <table class="table ">
+                    <thead>
+                        <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">Method</th>
+                            <th scope="col">URL</th>
+                            <th scope="col">Body</th>
+                            <th scope="col">Description</th>
+                        </tr>
+                    </thead>
+                    <tbody class="table-group-divider">
+                        <tr>
                         <th scope="row">1</th>
                         <td>post</td>
                         <td>toys-api.onrender.com/users</td>
                         <td>{ "name":"ben5 shirom",
-                           <br> "email":"ben5@gmail.com",
+                            <br> "email":"ben5@gmail.com",
                             <br> "password":"123456" }</td>
-                        <td>User Sign Up retrun data of user</td>
-                    </tr>
-                    <tr>
-                        <th scope="row">2</th>
-                        <td>post</td>
-                        <td>toys-api.onrender.com/users/login</td>
-                        <td>{ "email":"ben5@gmail.com",
-                            <br> "password":"123456" }</td>
-                        <td>User login retrun token (expired in 60min) </td>
-                    </tr>
-                    <tr>
-                        <td colspan="5" class="text-center text-bg-info text fw-bold " >must send token</td>
-                    </tr>
-                    <tr>
-                        <th scope="row">3</th>
-                        <td >get</td>
-                        <td>toys-api.onrender.com/users/myInfo</td>
-                        <td>none</td>
+                            <td>User Sign Up retrun data of user</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">2</th>
+                            <td>post</td>
+                            <td>toys-api.onrender.com/users/login</td>
+                            <td>{ "email":"ben5@gmail.com",
+                                <br> "password":"123456" }</td>
+                                <td>User login retrun token (expired in 60min) </td>
+                            </tr>
+                            <tr>
+                                <td colspan="5" class="text-center text-bg-info text fw-bold " >must send token</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">3</th>
+                                <td >get</td>
+                                <td>toys-api.onrender.com/users/myInfo</td>
+                                <td>none</td>
                         <td>Get user data by token</td>
                     </tr>
-                
+                    
                 </tbody>
             </table>
+        </div>
         </div>
         <!-- Users end  -->
         <!-- Toys -->
@@ -124,12 +121,14 @@
             <div>
                 <h1 id="Toys">Toys Routes</h1>
             </div>
-            <table class="table">
-                <thead>
-                    <tr>
-                        <th scope="col">#</th>
-                        <th scope="col">Method</th>
-                        <th scope="col">URL</th>
+            <div class="table-responsive">
+
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">Method</th>
+                            <th scope="col">URL</th>
                         <th scope="col">Body</th>
                         <th scope="col">Description</th>
                     </tr>
@@ -200,8 +199,9 @@
                 </tbody>
             </table>
         </div>
+        </div>
         <!-- Toys end -->
-
+        
     </main>
     <!-- main end -->
     <!-- footer -->
