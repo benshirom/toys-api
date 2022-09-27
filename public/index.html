@@ -45,8 +45,10 @@
     <!-- main  -->
     <main class="container-fluid mt-5 pt-5">
         <!-- Guide  -->
-        <div id="Guide" class="container">
-
+        <div class="container">
+            <div>
+                <h1 id="Guide">Users Routes</h1>
+            </div>
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sunt incidunt provident omnis neque vel
             consequatur
             nulla illo, a veritatis, dolore quia. Commodi reprehenderit corrupti aperiam similique neque quae,
@@ -87,39 +89,32 @@
                 <tbody class="table-group-divider">
                     <tr>
                         <th scope="row">1</th>
-                        <td>Mark</td>
-                        <td>Otto</td>
-                        <td>@mdo</td>
-                        <td>@mdo</td>
+                        <td>post</td>
+                        <td>toys-api.onrender.com/users</td>
+                        <td>{ "name":"ben5 shirom",
+                           <br> "email":"ben5@gmail.com",
+                            <br> "password":"123456" }</td>
+                        <td>User Sign Up retrun data of user</td>
                     </tr>
                     <tr>
                         <th scope="row">2</th>
-                        <td>Jacob</td>
-                        <td>Thornton</td>
-                        <td>@fat</td>
-                        <td>@fat</td>
+                        <td>post</td>
+                        <td>toys-api.onrender.com/users/login</td>
+                        <td>{ "email":"ben5@gmail.com",
+                            <br> "password":"123456" }</td>
+                        <td>User login retrun token (expired in 60min) </td>
+                    </tr>
+                    <tr>
+                        <td colspan="5" class="text-center text-bg-info text fw-bold " >must send token</td>
                     </tr>
                     <tr>
                         <th scope="row">3</th>
-                        <td >Larry the Bird</td>
-                        <td>@twitter</td>
-                        <td>@twitter</td>
-                        <td>@twitter</td>
+                        <td >get</td>
+                        <td>toys-api.onrender.com/users/myInfo</td>
+                        <td>none</td>
+                        <td>Get user data by token</td>
                     </tr>
-                    <tr>
-                        <th scope="row">4</th>
-                        <td >Larry the Bird</td>
-                        <td>@twitter</td>
-                        <td>@twitter</td>
-                        <td>@twitter</td>
-                    </tr>
-                    <tr>
-                        <th scope="row">5</th>
-                        <td >Larry the Bird</td>
-                        <td>@twitter</td>
-                        <td>@twitter</td>
-                        <td>@twitter</td>
-                    </tr>
+                
                 </tbody>
             </table>
         </div>
@@ -166,7 +161,7 @@
                         <td >get</td>
                         <td>toys-api.onrender.com/toys/prices?min=70&max=200</td>
                         <td>none</td>
-                        <td>get 10 toys by price can use with min & max or onlu one of them </td>
+                        <td>get 10 toys by price can use with min & max or only one of them </td>
                     </tr>
                     <tr>
                         <td colspan="5" class="text-center text-bg-info text fw-bold " >must send token</td>
