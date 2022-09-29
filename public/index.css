@@ -1,0 +1,7 @@
+.strip{
+    height: 500px;
+    width: 100%;
+    background-image: url(pexels-ann-h-1888000.jpg);
+    background-position: center;
+    background-size: cover;
+}

@@ -17,23 +17,21 @@
 <body>
     <header>
 
-        <nav class="navbar fixed-top navbar-expand-lg bg-light">
+        <nav class="navbar fixed-top navbar-expand-sm bg-light">
             <div class="container-fluid">
-                <a class="navbar-brand" href="#">Navbar</a>
+                <a class="navbar-brand" href="#">Api Toy</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav">
+
                         <li class="nav-item">
-                            <a class="nav-link active" href="#Guide">Guide</a>
+                            <a class="nav-link active" href="#UsersGuide">Users Routes</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" href="#Users">Users Routes</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link active" href="#Toys">Toys Routes</a>
+                            <a class="nav-link active" href="#ToysGuide">Toys Routes</a>
                         </li>
 
                     </ul>
@@ -42,31 +40,30 @@
         </nav>
     </header>
 
+    <div class="strip"></div>
     <!-- main  -->
-    <main class="container-fluid mt-5 pt-5">
+    <main class="container-fluid mt-5 ">
         <!-- Guide  -->
         <div class="container">
             <div>
-                <h1 id="Guide">Users Routes</h1>
+                <h1 id="UsersGuide">Users Guide</h1>
             </div>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sunt incidunt provident omnis neque vel
-            consequatur
-            nulla illo, a veritatis, dolore quia. Commodi reprehenderit corrupti aperiam similique neque quae,
-            exercitationem iste, nam optio, quam nobis modi aliquid! Voluptates ab vero explicabo nihil itaque, facere
-            tenetur voluptatum laborum hic quod cumque dolores illo ipsum consectetur libero exercitationem quibusdam
-            perspiciatis quas obcaecati at aperiam magni sit eaque! Laboriosam ipsam minus est dignissimos totam, vitae,
-            doloribus quam repudiandae natus iure necessitatibus amet soluta vel culpa nam sint nobis sequi, optio
-            quidem
-            unde quasi tenetur. Saepe adipisci necessitatibus assumenda sit distinctio consectetur magni cupiditate hic
-            vero
-            praesentium tenetur omnis error harum cum asperiores vel dolorem, corporis eligendi molestiae. Alias
-            voluptate
-           
+            <p>
+
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sunt incidunt provident omnis neque vel
+                consequatur
+                nulla illo, a veritatis, dolore quia. Commodi reprehenderit corrupti aperiam similique neque quae,
+                exercitationem iste, nam optio, quam nobis modi aliquid! Voluptates ab vero explicabo nihil itaque,
+                facere
+                tenetur voluptatum laborum hic quod cumque dolores illo ipsum consectetur libero exercitationem
+                quibusdam
+            </p>
+
 
         </div>
         <!-- Guide end  -->
         <!--Users  -->
-        <div class="container">
+        <div class="container-md my-3">
             <div>
                 <h1 id="Users">Users Routes</h1>
             </div>
@@ -84,12 +81,13 @@
                     </thead>
                     <tbody class="table-group-divider">
                         <tr>
-                        <th scope="row">1</th>
-                        <td>post</td>
-                        <td>toys-api.onrender.com/users</td>
-                        <td>{ "name":"ben5 shirom",
-                            <br> "email":"ben5@gmail.com",
-                            <br> "password":"123456" }</td>
+                            <th scope="row">1</th>
+                            <td>post</td>
+                            <td>toys-api.onrender.com/users</td>
+                            <td>{ "name":"ben5 shirom",
+                                <br> "email":"ben5@gmail.com",
+                                <br> "password":"123456" }
+                            </td>
                             <td>User Sign Up retrun data of user</td>
                         </tr>
                         <tr>
@@ -97,27 +95,42 @@
                             <td>post</td>
                             <td>toys-api.onrender.com/users/login</td>
                             <td>{ "email":"ben5@gmail.com",
-                                <br> "password":"123456" }</td>
-                                <td>User login retrun token (expired in 60min) </td>
-                            </tr>
-                            <tr>
-                                <td colspan="5" class="text-center text-bg-info text fw-bold " >must send token</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">3</th>
-                                <td >get</td>
-                                <td>toys-api.onrender.com/users/myInfo</td>
-                                <td>none</td>
-                        <td>Get user data by token</td>
-                    </tr>
-                    
-                </tbody>
-            </table>
-        </div>
+                                <br> "password":"123456" }
+                            </td>
+                            <td>User login retrun token (expired in 60min) </td>
+                        </tr>
+                        <tr>
+                            <td colspan="5" class="text-center text-bg-info text fw-bold ">must send token</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">3</th>
+                            <td>get</td>
+                            <td>toys-api.onrender.com/users/myInfo</td>
+                            <td>none</td>
+                            <td>Get user data by token</td>
+                        </tr>
+
+                    </tbody>
+                </table>
+            </div>
         </div>
         <!-- Users end  -->
-        <!-- Toys -->
+        <!-- Guide  -->
         <div class="container">
+            <div>
+                <h1 id="ToysGuide">Toys Guide</h1>
+            </div>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sunt incidunt provident omnis neque vel
+            consequatur
+            nulla illo, a veritatis, dolore quia. Commodi reprehenderit corrupti aperiam similique neque quae,
+            exercitationem iste, nam optio, quam nobis modi aliquid! Voluptates ab vero explicabo nihil itaque, facere
+            tenetur voluptatum laborum hic quod cumque dolores illo ipsum consectetur libero exercitationem quibusdam
+
+
+        </div>
+        <!-- Guide end  -->
+        <!-- Toys -->
+        <div class="container-md my-3">
             <div>
                 <h1 id="Toys">Toys Routes</h1>
             </div>
@@ -129,79 +142,79 @@
                             <th scope="col">#</th>
                             <th scope="col">Method</th>
                             <th scope="col">URL</th>
-                        <th scope="col">Body</th>
-                        <th scope="col">Description</th>
-                    </tr>
-                </thead>
-                <tbody class="table-group-divider">
-                    <tr>
-                        <th scope="row">1</th>
-                        <td>get</td>
-                        <td>toys-api.onrender.com/toys</td>
-                        <td>none</td>
-                        <td>get 10 toys </td>
-                    </tr>
-                    <tr>
-                        <th scope="row">2</th>
-                        <td>get</td>
-                        <td>toys-api.onrender.com/toys/search?s={name}</td>
-                        <td>none</td>
-                        <td>Search toys by name or info get 10 toys</td>
-                    </tr>
-                    <tr>
-                        <th scope="row">3</th>
-                        <td >get</td>
-                        <td>toys-api.onrender.com/toys/category/{category name}</td>
-                        <td>none</td>
-                        <td>get 10 toys by category name</td>
-                    </tr>
-                    <tr>
-                        <th scope="row">4</th>
-                        <td >get</td>
-                        <td>toys-api.onrender.com/toys/prices?min=70&max=200</td>
-                        <td>none</td>
-                        <td>get 10 toys by price can use with min & max or only one of them </td>
-                    </tr>
-                    <tr>
-                        <td colspan="5" class="text-center text-bg-info text fw-bold " >must send token</td>
-                    </tr>
-                    <tr>
-                        <th scope="row">5</th>
-                        <td >post</td>
-                        <td>toys-api.onrender.com/toys</td>
-                        <td>{  "name":"bal11",
-                            <br> "info":"fff",
-                            <br> "category":"sport",
-                            <br> "img":"football.jpg" ,
-                            <br> "price":100  }
-                        </td>
-                        <td>Add toy only img is not required </td>
-                    </tr>
-                    <tr>
-                        <th scope="row">6</th>
-                        <td >put</td>
-                        <td>toys-api.onrender.com/toys/{id of the toy}</td>
-                        <td>{  "name":"bal11",
-                            <br> "info":"fff",
-                            <br> "category":"sport",
-                            <br> "img":"football.jpg" ,
-                            <br> "price":100  }
-                        </td>
-                        <td>Edit toy only if you created the toy  </td>
-                    </tr>
-                    <tr>
-                        <th scope="row">7</th>
-                        <td>delete</td>
-                        <td>toys-api.onrender.com/toys/{id of the toy}</td>
-                        <td> none</td>
-                        <td>Delete toy only if you created the toy </td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
+                            <th scope="col">Body</th>
+                            <th scope="col">Description</th>
+                        </tr>
+                    </thead>
+                    <tbody class="table-group-divider">
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>get</td>
+                            <td><a href="/toys">toys-api.onrender.com/toys</a></td>
+                            <td>none</td>
+                            <td>get 10 toys </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">2</th>
+                            <td>get</td>
+                            <td><a href="/toys/search?s=ball">toys-api.onrender.com/toys/search?s={name}</a></td>
+                            <td>none</td>
+                            <td>Search toys by name or info get 10 toys</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">3</th>
+                            <td>get</td>
+                            <td><a href="/toys/category/sea">toys-api.onrender.com/toys/category/{category name}</a></td>
+                            <td>none</td>
+                            <td>get 10 toys by category name</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">4</th>
+                            <td>get</td>
+                            <td><a href="/toys/prices?min=70&max=200">toys-api.onrender.com/toys/prices?min=70&max=200</a></td>
+                            <td>none</td>
+                            <td>get 10 toys by price can use with min & max or only one of them </td>
+                        </tr>
+                        <tr>
+                            <td colspan="5" class="text-center text-bg-info text fw-bold ">must send token</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">5</th>
+                            <td>post</td>
+                            <td>toys-api.onrender.com/toys</td>
+                            <td>{ "name":"bal11",
+                                <br> "info":"fff",
+                                <br> "category":"sport",
+                                <br> "img":"football.jpg" ,
+                                <br> "price":100 }
+                            </td>
+                            <td>Add toy only img is not required </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">6</th>
+                            <td>put</td>
+                            <td>toys-api.onrender.com/toys/{id of the toy}</td>
+                            <td>{ "name":"bal11",
+                                <br> "info":"fff",
+                                <br> "category":"sport",
+                                <br> "img":"football.jpg" ,
+                                <br> "price":100 }
+                            </td>
+                            <td>Edit toy only if you created the toy </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">7</th>
+                            <td>delete</td>
+                            <td>toys-api.onrender.com/toys/{id of the toy}</td>
+                            <td> none</td>
+                            <td>Delete toy only if you created the toy </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
         </div>
         <!-- Toys end -->
-        
+
     </main>
     <!-- main end -->
     <!-- footer -->
